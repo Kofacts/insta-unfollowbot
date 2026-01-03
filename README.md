@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="Instagram Unfollow Bot" width="128">
+</p>
+
 # Instagram Unfollow Bot
 
 A Chrome extension to bulk unfollow accounts on Instagram with safety features, ignore lists, and human-like timing.
