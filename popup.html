@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Unfollow Bot</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>📷 Unfollow Bot</h1>
+      <span id="status-indicator" class="status-badge status-idle">Idle</span>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="stat-card">
+        <span class="stat-value" id="session-count">0</span>
+        <span class="stat-label">This Session</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="total-count">0</span>
+        <span class="stat-label">Total Ever</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="skipped-count">0</span>
+        <span class="stat-label">Skipped</span>
+      </div>
+    </section>
+
+    <!-- Control Buttons -->
+    <section class="controls-section">
+      <button id="start-btn" class="btn btn-primary">
+        <span class="btn-icon">▶</span> Start
+      </button>
+      <button id="stop-btn" class="btn btn-danger" disabled>
+        <span class="btn-icon">⏹</span> Stop
+      </button>
+    </section>
+
+    <!-- Settings Section -->
+    <section class="settings-section">
+      <h2 class="section-title">⚙️ Settings</h2>
+      
+      <div class="setting-row">
+        <label for="min-delay">Min Delay (sec)</label>
+        <input type="number" id="min-delay" value="30" min="5" max="300">
+      </div>
+      
+      <div class="setting-row">
+        <label for="max-delay">Max Delay (sec)</label>
+        <input type="number" id="max-delay" value="90" min="10" max="600">
+      </div>
+      
+      <div class="setting-row">
+        <label for="max-unfollows">Max Unfollows</label>
+        <input type="number" id="max-unfollows" value="50" min="1" max="500">
+      </div>
+      
+      <div class="setting-row checkbox-row">
+        <label for="dry-run">Dry Run Mode</label>
+        <input type="checkbox" id="dry-run">
+      </div>
+      
+      <div class="setting-row checkbox-row">
+        <label for="auto-scroll">Auto-scroll</label>
+        <input type="checkbox" id="auto-scroll" checked>
+      </div>
+    </section>
+
+    <!-- Ignore List Section -->
+    <section class="ignore-section">
+      <h2 class="section-title">
+        🚫 Ignore List 
+        <span id="ignore-count" class="ignore-count">(0)</span>
+      </h2>
+      <textarea 
+        id="ignore-list" 
+        placeholder="Enter usernames to skip (one per line)&#10;e.g.&#10;friend1&#10;family_member&#10;important_brand"
+      ></textarea>
+      <div class="ignore-actions">
+        <button id="save-ignore-btn" class="btn btn-secondary">Save List</button>
+        <button id="clear-ignore-btn" class="btn btn-ghost">Clear</button>
+      </div>
+    </section>
+
+    <!-- Activity Log -->
+    <section class="log-section">
+      <h2 class="section-title">📋 Activity Log</h2>
+      <div id="activity-log" class="activity-log">
+        <div class="log-entry log-info">Ready to start. Navigate to your following page first.</div>
+      </div>
+      <button id="clear-log-btn" class="btn btn-ghost btn-small">Clear Log</button>
+    </section>
+
+    <!-- Warning -->
+    <footer class="warning-footer">
+      ⚠️ Use responsibly. Instagram may restrict accounts that unfollow too quickly.
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
