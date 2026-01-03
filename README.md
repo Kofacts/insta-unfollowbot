@@ -6,6 +6,8 @@ A Chrome extension to bulk unfollow accounts on Instagram with safety features, 
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
+![Extension Preview](preview.png)
+
 ## Disclaimer
 
 **Use at your own risk.** This tool automates actions on Instagram, which may violate their Terms of Service. Instagram may:
