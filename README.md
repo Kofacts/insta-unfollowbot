@@ -1,4 +1,4 @@
-# Instagram Unfollow Bot 🧹
+# Instagram Unfollow Bot
 
 A Chrome extension to bulk unfollow accounts on Instagram with safety features, ignore lists, and human-like timing.
 
@@ -6,7 +6,7 @@ A Chrome extension to bulk unfollow accounts on Instagram with safety features, 
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 **Use at your own risk.** This tool automates actions on Instagram, which may violate their Terms of Service. Instagram may:
 - Temporarily restrict your account
@@ -17,13 +17,13 @@ A Chrome extension to bulk unfollow accounts on Instagram with safety features, 
 
 ## Features
 
-- ✅ **Bulk unfollow** with one click
-- 🛡️ **Safety features** - Random delays (30-90s), session limits
-- 📋 **Ignore list** - Protect accounts you want to keep following
-- 🔍 **Dry run mode** - Test without actually unfollowing
-- 📊 **Activity log** - Track unfollows and skipped accounts
-- ⚙️ **Configurable** - Custom delays, limits, auto-scroll
-- 💾 **Persistent storage** - Settings and stats saved across sessions
+- **Bulk unfollow** with one click
+- **Safety features** - Random delays (30-90s), session limits
+- **Ignore list** - Protect accounts you want to keep following
+- **Dry run mode** - Test without actually unfollowing
+- **Activity log** - Track unfollows and skipped accounts
+- **Configurable** - Custom delays, limits, auto-scroll
+- **Persistent storage** - Settings and stats saved across sessions
 
 ## Installation
 
